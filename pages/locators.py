@@ -3,6 +3,9 @@ from selenium.webdriver.common.by import By
 
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET_BTN = (By.XPATH, "//*[@id='default']/header/div[1]/div/div[2]/span/a")
+    EMPTY_BASKET = (By.ID, "content_inner")
+    PRODUCT_IN_BASKET = (By.CSS_SELECTOR, "h2.col-sm-6")
     
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
